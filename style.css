@@ -58,7 +58,8 @@ body {
   width: 170px;
   margin-top: 30px;
   display: block;
-  margin-left: 106px;
+  /* margin-left: 106px; */
+  margin-left: 85px;
 }
 .temp {
   font-size: 80px;
@@ -106,4 +107,33 @@ body {
   display: none;
   text-align: left;
   color: red;
+}
+
+@media (min-width: 350px) and (max-width: 550px) {
+  /* … */
+  .weatherIcon img {
+    width: 130px;
+    margin-top: 20px;
+    display: block;
+    /* margin-left: 106px; */
+    margin: 10px auto;
+    /* margin-left: 95px; */
+  }
+
+  .col .image img {
+    display: none;
+  }
+
+  .search input {
+    padding: 10px 10px;
+    height: 40px;
+    flex: none;
+  }
+  .search button {
+    width: 40px;
+    height: 40px;
+  }
+  .search {
+    justify-content: space-evenly;
+  }
 }
